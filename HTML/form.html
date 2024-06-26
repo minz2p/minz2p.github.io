@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lesson</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="request.php" method="get">
+        <!-- method => get -> Database ထဲက ဆွဲထုတ်ချင်ရင်
+         post -> Database ထဲကို ထည့်ချင်ရင် -->
+
+         <!-- အဖွင့် tag ထဲမှာ အကုန်လုံးက attribute -->
+         <label for="name">Name</label>
+         <input type="text" name="stu_name" id="name">
+         <br><br>
+         <label for="email">Email</label>
+         <input type="email" name="stu_email" id="email">
+         <br><br>
+         <label for="password">Password</label>
+         <input type="password" name="stu_password" id="password">
+         <br><br>
+         <label for="phone">Phone</label>
+         <input type="number" name="stu_phone" id="phone">
+         <br><br>
+         <label for="dateofbirth">Date Of Birth</label>
+         <input type="date" name="stu_dob" id="dateofbirth">
+         <br><br>
+         <label for="passport">Passport</label>
+         <input type="file" accept="image/*" name="stu_passport" id="passport">
+         <!-- Accept က ကိုယ်ကန့်သတ်ချင်တဲ့ဟာရွေးလို့ရ eg.png,jlpg,jlep,dec -->
+          <!-- image/* က ပုံ only အတွက်သာလျှင် -->
+         <br><br>
+         <!-- Value က သယ်သွားမဲ့ကောင် -->
+         <label for="">Gender</label>
+         <br><br>
+         <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+         <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+         <input type="radio" name="gender" id="other" value="other"><label for="other">Other</label>
+         <br><br>
+         <label for="year">Year</label>
+         <select name="year" id="year">
+            <option value="">Choose Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+         </select>
+         <br><br>
+         <label for="">Hobby</label>
+         <br>
+         <!-- Value က သယ်သွားမဲ့ကောင် -->
+          <!-- Value သုံးရမဲ့ကောင်က select,radio,checkbox -->
+           <!-- lable for ,value နဲ့ id နဲ့ တူရမယ် name က ကြိုက်တာပေးလို့ရ -->
+         <input type="checkbox" name="stu_like" id="movies" value="Movies"><label for="movies">Movies</label>
+         <input type="checkbox" name="gamming" id="gamming" value="gamming"><label for="gamming">Gamming</label>
+         <input type="checkbox" name="travelling" id="travelling" value="travelling"><label for="travelling">Travelling</label>
+         <br><br>
+         <label for="address">Address</label>
+         <textarea name="stu_address" id="address" cols="30" rows="10"></textarea>
+         <br><br>
+         <input type="time" name="time" id="time">
+         <br><br>
+         <input type="datetime-local" name="datetime" id="datetime">
+         <br><br>
+         <input type="week" name="week" id="week">
+         <br><br>
+         <input type="color" name="color" id="color">
+         <br><br>
+         <input type="range" name="range" id="range" min="0" max="100">
+         <br><br>
+         <input type="text" name="text" id="text" required>
+         <br><br>
+         <input type="number" name="number" id="number" placeholder="09-1212542">
+         <br><br>
+         <input type="text" name="text" id="text" readonly>
+         <br><br>
+         <input type="text" name="text" id="text" disabled>
+         <br><br>
+         <input type="text" name="def_value" id="def_value" value="35">
+         <button type="submit">Save</button>
+         <!-- submit,button,menu,rest -->
+    </form>
+</body>
+</html>
