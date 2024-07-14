@@ -1,0 +1,244 @@
+/* universal selector */
+/* *{
+    color: red;
+} */
+ 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* tag or element selector */
+h1{
+    text-align: center;
+    color: green;
+}
+
+/* attribute selector */
+/* a-> ကိုယ်ယူချင်တဲ့ အရာ , []-> ကိုယ်ပေးချင်တဲ့အရာ(key) */
+a[title="google"]{
+    letter-spacing: 20px;
+}
+
+/* id selector */
+#idselector{
+    text-indent: 40px;
+}
+/* class selector */
+.classselector{
+    color: brown;
+    letter-spacing:10px;
+    word-spacing: 20px;
+    line-height: 40px;
+}
+
+/* Descendant selector */
+div p {
+    background-color: yellow;
+}
+/* Child selector */
+div>p {
+    color: black;
+}
+span>p {
+    color: green;
+}
+
+/* Hover Selector or Pseudo selector*/
+/* visited ဖြစ်ရင် hover မရ visited မဖြစ်ရင် hover ရ */
+/* active က click ထောက်တာနဲ့ ဖြတ်ကနဲ ပေါ်တာ */
+h1 a:hover {
+    color: white;
+    font-size: 50px;
+    background-color: red;
+}
+
+h1:hover{
+    color: red;
+}
+h2 a:link{
+    color: green;
+}
+h2 a:hover{
+    color: red;
+}
+h2 a:visited{
+    color: brown;
+}
+h2 a:active{
+    color: yellow;
+}
+
+/* target */
+:target{
+    color: red;
+    border: 10px dotted black;
+    line-height: 30px;
+    letter-spacing: 20px;
+}
+div:target{
+    color: red;
+    border:10px dotted black;
+    line-height: 30px;
+    letter-spacing: 20px;
+}
+p:target{
+    color: blue;
+    border:10px dotted green;
+}
+
+/* border */
+h1{
+    text-align: center;
+    color: red;
+}
+.borderone{
+    border: thin solid red;
+    /* solid ,double,dothed */
+    /* px နဲ့ လည်းပေးလို့ရ */
+}
+.bordertwo{
+    border-top: 10px solid yellow;
+    border-left: 10px solid yellow;
+}
+.borderthree{
+    border-color: brown;
+    /* border-style: solid;
+    /* T & R & B & L */
+    /* border-style: solid dotted;
+    T/B & L/R */
+    border-style: solid dotted double;
+    /* T & L/R & B */
+    border-style: solid dotted double dashed;
+    /* T & R & B & L */
+}
+.borderwidth{
+    border-width: 3px 30px;
+    border-style: solid;
+}
+
+/* margin */
+
+.marginone{
+    margin: 10px 30px 40px 100px;
+    border: 1px solid green;
+}
+.margintwo{
+    margin-top: 100px;
+}
+
+/* padding */
+.paddingone{
+    /* padding: 100px; */
+    padding-top:50px ;
+    border: 1px solid red;
+}
+
+/* layout */
+.inline{
+    border: 2px solid red;
+    display: inline-block;
+    width:400px;
+}
+.block{
+    border: 2px solid green;
+    width: 400px;
+    display: inline-block;
+}
+
+/* float */
+/* clear က float အပေါ်ကကောင်နဲ့ မသက်ဆိုင်တဲ့ အရာ */
+/* အပေါ်ကကောင်ရဲ့ အောက်ချချင်တဲ့ အရာ */
+
+.float_right img{
+    width: 40%;
+    float: right;
+}
+.float_right p{
+    text-align: justify;
+}
+.clear{
+    clear: both;
+}
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+/* grid */
+.gridone div,.gridtwo div,.gridthree div,.gridFour div,.gridfive div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.gridone,.gridtwo,.gridthree,.gridFour,.gridfive{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-columns: auto 1000px auto; */
+}
+.gridtwo{
+    grid-column-gap: 40px;
+}
+.gridthree{
+    grid-row-gap: 40px;
+    /* grid-gap:40px */
+    grid-column-gap: 70px;
+}
+/* row/column ပေါင်း */
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* position */
+.parent_absolute{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid red;
+    position: relative;
+}
+.absolute{
+    width: 400px;
+    height: 200px;
+    border: 2px solid green;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+.parent_relative{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid yellow;
+}
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid brown;
+    position: relative;
+    top: 10px;
+    left: 150px;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+/* font */
+.online {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face{
+    font-family: "playwrite";
+    src:url(Playwrite_HR_Lijeva/PlaywriteHRLijeva-VariableFont_wght.ttf)
+}
+.offline{
+    font-family: "playwrite";
+}

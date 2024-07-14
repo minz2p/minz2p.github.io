@@ -1,0 +1,18 @@
+h1{
+    /* Keyword or text */
+    /* # code or # text 0->9,a->f */
+    /* short #code ဂဏန်းအတိုနဲ့ သုံး */
+    /* rgb-redgreenblue -> 0->255 */
+    color: rgb(#00f);
+    text-align: center;
+}
+p{
+    color: green;
+    /* text-indent က စာသား tab ခုန် */
+    /* word-spacing စာလုံးခြား */
+    /* line-heignt စာကြောင်းခြား */
+    text-indent: 50px;
+    font-size: 20px;
+    word-spacing: 20px;
+    line-height: 30px;
+}

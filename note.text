@@ -3,3 +3,76 @@ git add .
 git status
 git commit -m "first upload"
 git push
+git push -f -> ဘာ error ဖြစ်ဖြစ် တင်တာ
+. -> extension
+
+git status
+git add*
+git status
+git commit -am "something"
+git push
+
+comment -> control + ?
+window run broswer - alt+b
+window refresh - ctrt+r
+sheet ခွဲ - ctrt + 2,3,4
+စာချုံ့ lorem - alt+z
+
+<- Attribute => align = key, announce (right) = value ->
+<- Global Variable,Global Attributes => id , class ->
+
+<- Html head ->
+
+<meta name="description" content="Learning web development">
+<meta name="keywords" content="Heinlearn, web development, Myanmar Web Training">
+<!-- Description, Keywords က အလုံး ၁၅၀,၁၆၀ ကြားရေး -->
+<meta name="robots" content="index, notfollow">
+<!-- register form တို့ acc register တို့ ပါရင် not follow မပါရင် follow , register ပါရင် follow ထားရင် hack ခံရမှာဆိုးလိူ့-->
+link -> rel , href => rel->stylesheet,icon , href->page,image,font link ထည့်တဲ့ဟာ (icon က html title မှာ ပုံထည့်တာ)
+
+
+<- Html head ->
+
+<meta name="description" content="Learning web development">
+<meta name="keywords" content="Heinlearn, web development, Myanmar Web Training">
+<!-- Description, Keywords က အလုံး ၁၅၀,၁၆၀ ကြားရေး -->
+<meta name="robots" content="index, notfollow">
+<!-- register form တို့ acc register တို့ ပါရင် not follow မပါရင် follow , register ပါရင် follow ထားရင် hack ခံရမှာဆိုးလိူ့-->
+link -> rel , href => rel->stylesheet,icon(title မှာ ပုံထည့်တာ) , href->page,image,font
+
+<- Html body ->
+
+block element,inline element
+div -> division (တစ်ပိုင်းချင်းခွဲရေးတာ)
+h1 to h6
+p => span => same , span က စာပြင်ချင်တဲ့နေရာမှာသုံး
+i => em / italic စာလုံးစောင်း စာပြင်ချင်တဲ့နေရာမှာသုံး
+b => strong / bold စာလုံးမဲ စာပြင်ချင်တဲ့နေရာမှာသုံး
+br = စာကြောင်းခြား
+q = quoter -> " " ခံပြီးရေးတာ
+blockquote -> sologran အဓိက စာတွေရေးတာ 
+small -> စာကြောင်းအသေးနဲ့ ရေးတာ
+img -> src,alt(ပုံထည့်တာ) => src=picture , alt=picture name
+a -> href,target => href = link ချိတ်(ကြိုက်တဲ့ link ချိတ်လို့ရ) , target="_blank"(target blank က page အသစ်နဲ့ ပြတာ)
+
+<- Html list ->
+
+- Order list -> type , start -> type=> 1,a,A,i,I start=> ကိုယ်စချင်တဲ့ စကားလုံးက စလို့ရ eg-24(24)
+- Unorder list -> type => disc,circle,square => disc-> spot နဲ့
+- Definition list
+
+Order list => ol(type,start)->li
+Unorder list => ul(type)->li
+Definition list => dl-> dt(Definition ခေါင်းစဥ်) -> dd(Definition body) 
+
+<- Html list ->
+
+<- Html Table ->
+
+table -> border(something),cellspacing , cellpadding => cellspacing (table အကွက်ခြား ) , cellpadding (အတွင်းနေရာကို နေရာချဲ့တာ)
+table->thead,tbody,tfoot
+thead->tr,th()
+tbody->tr,td() => rowspan,colspan (rowspan -> ကိုယ်ပေါင်းချင်တဲ့ ကောင်ကို အပေါ်ဆုံးကပေါင်း eg.tb ထဲက td အပေါ်ဆုံးမှာ ပေါင်း ,colspan က ကြိုက်တဲ့နေရာပေါင်း)
+tfoot->tr,th()
+
+<- Html body ->
