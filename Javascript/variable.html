@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <script src="custome.js"></script>
+</head>
+<body>
+    <h1>Three Type of Variable</h1>
+    <script>
+        // global variable
+        var name = "Kyaw Zin Aung";
+        console.log(name);
+        var name = "Kyaw Zin Aung Update";
+        console.log(name);
+
+        // block scope variable
+        // variable ဆင်တူ ပေးလို့မရ
+        // let က variable တစ်ခုဘဲကြော်ငြာလို့ရ update တော့ ပေးလို့ရ
+        // eg let fatherName
+        // let fatherName
+        let fatherName = "U Nay Myo";
+        console.log(fatherName);
+        fatherName = "U Nay Myo Update";
+        console.log(fatherName);
+
+        var num = 1;
+        if (num) {
+            var num1 = 2;
+            let num2 = 3;
+            document.write(num2);
+        }
+        document.write(num1);
+
+        // constant variable(const)
+        // const က variable ရော update ‌ရော ပေးလို့မရ
+        const motherName = "Daw Myo";
+        console.log(motherName);
+        console.log(name);
+    </script>
+</body>
+</html>

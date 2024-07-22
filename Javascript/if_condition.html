@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Condition</title>
+</head>
+<body>
+    <h1>If Condition</h1>
+    <script>
+        // sytax
+        // if (condition = true) {
+        //     code
+        // }
+
+        let number = parseInt(prompt("Enter Number")); // prompt က user ကို ဂဏန်းတောင်းတာ
+        // document.write(number);
+        // parseInt က ကိန်းပြည့် ဂဏန်းဘဲတောင်းတာ ကျန်တာရေးရင် else ထဲက ကောင်ဘဲယူ
+
+        if (number < 100) {
+            document.write("Your Number is less than 100!"); // document ပေါ်မှာ ပြတာ
+        }else if (number > 100) {
+            document.write("Your Number is greater than 100!");
+        }else if (number == 100) {
+            document.write("Your Number is equal to 100!");
+        }else{
+            document.write("None of these");
+        }
+    </script>
+</body>
+</html>

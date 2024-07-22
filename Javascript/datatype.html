@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatype</title>
+</head>
+<body>
+    <h1>Datatype</h1>
+
+    <script>
+        // string data type
+        // var name = "Kyaw Zin Aung"; ->"Kyaw Zing Aung" က Assign ချတာလို့ ခေါ်တာ
+        // var name = 'Kyaw Zin Aung';
+        // "",'',`` -> String -> စာသားကိုဘဲပြတာ
+        const name = `kyaw zin aung`;
+        console.log(name);
+        console.log(typeof(name));
+        // console.log(typeof(name)); => datatype ကြည့်
+
+        // numeric data type
+        let num = 23.3;
+        console.log(num);
+        console.log(typeof(num));
+
+        // boolean data type
+        var single = false;
+        console.log(single);
+        console.log(typeof(single));
+
+        // null = object datatype ပြ
+        var son = null;
+        console.log(son);
+        console.log(typeof(son));
+
+        // underfined
+        var mybaby;
+        console.log(mybaby);
+
+        // array datatype => object datatype နဲ့ ပြ
+        var array1 = new Array(1,2,3,4,"a","b","c");
+        // array တည်ဆောက်ရင် new Array ရယ် [] ရယ် တည်ဆောက်ရ
+        // array 7 ခန်း index 6 ခန်း -> index က 0 က စ‌ ကြည့်ရ လက်သည်းကွင်းထဲကဟာဘဲရေ
+        console.log(array1);
+        console.log(typeof(array1));
+        console.log(array1[4]);
+        // array ထုတ်ချင်ရင် index ‌ရေပြီး ထုတ် [] ကွင်း နဲ့ ထုတ်
+
+        var multiArray = ["Mg Mg","Ma Ma","Hla Hla",["Aung Aung","Tun Tun"],"Mya Mya"];
+        console.log(multiArray);
+        console.log(multiArray[3][0]);
+        // array ထဲ က array ကို ထုတ်ချင်ရင် ပထမ array ရဲ့ index ကို ရေ ဒုတိယ array ရဲ့ ကိုယ်ထုတ်ချင်တဲ့ index ကို ထုတ်
+
+        // object
+        var student = {
+            // key : value
+            // sorting က A to Z စီ
+            name : "Kyaw Zin Aung",
+            age : 28,
+            address : "Mandalay , Mtotha",
+            color : ["red","blue"]
+        }
+        // object ကို ထုတ်ချင်ရင် . နဲ့ ထုတ်
+        console.log(student);
+        console.log(student.address);
+        console.log(student.color[1]);
+    </script>
+</body>
+</html>
