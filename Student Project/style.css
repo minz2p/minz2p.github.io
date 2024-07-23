@@ -287,13 +287,13 @@
 /* start book row */
 .book_row{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px;
     grid-column-gap: 20px;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 .book_column{
     background-color: rgb(246, 15, 15);
-    padding: 20%;
+    padding: 40px;
 }
 .book_column i{
     background-color: white;
@@ -301,7 +301,79 @@
     padding: 40px;
     border-radius: 50%;
     font-size: 70px;
-    
+    position: relative;
+    left: 20%;
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
-.book_column p{
+.communicate_p{
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.p_p{
+    color: white;
+    text-align:center;
+    font-weight:light;
+}
+#graduation_icon{
+    color: #4274de;
+}
+#graduation_column{
+    background-color: #4274de;
+}
+#teacher_icon{
+    color: #2ba637;
+}
+#teacher_column{
+    background-color:#2ba637 ;
+}
+.book_column i:hover{
+    border: 2px solid rgba(7, 7, 7, 0.5);
+    border-radius: 20%;
+}
+/* end book_row  */
+
+/* start_university */
+.start_university{
+    text-align: center;
+    margin-top: 100px;
+}
+.university_h1{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+.university_p{
+    color: gray;
+    margin-bottom: 20px;
+}
+hr{
+    width: 20%;
+    border: 1px solid #4274de;
+    margin-left: 40%;
+}
+.course_img{
+    position: relative;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+.course_header{
+    position:absolute;
+    left: 20%;
+    top: 215%;
+    background-color:rgba(20, 31, 92, 1);
+    width: 20%;
+    padding: 40px;
+}
+.course_header>h1{
+    margin-bottom: 15px;
+    color: rgb(255, 247, 247);
+}
+.course_header > p{
+    color: rgba(255, 247, 247, 0.8);
+    font-size: 18px;
 }
